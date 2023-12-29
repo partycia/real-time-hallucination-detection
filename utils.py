@@ -11,7 +11,7 @@ if torch.backends.mps.is_available():
 
 # Load Spacy English model
 nlp = spacy.load("en_core_web_sm")
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 def llm_evaluate(sentences,sampled_passages):
     prompt = f"""You will be provided with a text passage \
